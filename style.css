@@ -5,3 +5,74 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #080808;
+  color: #fff;
+}
+
+/* Edit Container Mulai */
+.container {
+  padding: 10px 3%;
+}
+/* Edit Container Selesai */
+
+/* Edit Navbar Mulai */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px ;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 1.0s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+/* Edit Navbar Selesai */
+
+/* Edit Teks Header Mulai */
+.teks-header {
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.teks-header h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.teks-header h2 {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.teks-header h2 span {
+  color: #ff004f;
+}
+/* Edit Teks Header Selesai */
+
+
+
