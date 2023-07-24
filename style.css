@@ -156,5 +156,76 @@ nav ul li a:hover::after {
 }
 /* Edit Tentang Saya Selesai */
 
+/* Edit Layanan Mulai */
+#layanan {
+  padding: 30px 0;
+}
+
+.list-layanan {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.list-layanan div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 15px;
+  transition: background 1.0s, transform 1.0s;
+}
+
+.list-layanan div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.list-layanan div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.list-layanan div a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.list-layanan div:hover {
+  background-color: #ff004f;
+  transform: translateY(-10px);
+}
+/* Edit Layanan Selesai */
+
+/* Edit Portofolio Mulai */
+#portofolio {
+  padding: 50px 0;
+}
+
+.list-portofolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.hasil {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hasil img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+}
+/* Edit Portofolio Selesai */
+
 
 
