@@ -34,25 +34,25 @@
 <!-- Edit Header Selesai -->
 
 <!-- Edit Tentang Saya Mulai -->
-<div id="about">
+<div id="tentang-saya">
   <div class="container">
     <div class="row">
 
       <!-- Edit Tab Konten Mulai -->
-      <div class="about-col-1">
+      <div class="tentang-saya-col-1">
         <img src="images/img-1.jpg">
       </div>
-      <div class="about-col-2">
-        <h1 class="sub-titles">Tentang Saya</h1>
+      <div class="tentang-saya-col-2">
+        <h1 class="sub-judul">Tentang Saya</h1>
         <p>Lorem Ipsum dolor sit amet</p>
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('kemampuan')">Kemampuan</p>
+        <div class="tab-judul">
+          <p class="tab-links link-aktif" onclick="opentab('kemampuan')">Kemampuan</p>
           <p class="tab-links" onclick="opentab('pengalaman-organisasi')">Pengalaman Organisasi</p>
           <p class="tab-links" onclick="opentab('pendidikan')">Pendidikan</p>
         </div>
 
         <!-- Edit Konten Kemampuan Mulai-->
-        <div class="tab-contents active-tab" id="kemampuan">
+        <div class="tab-kontens tab-aktif" id="kemampuan">
           <ul>
             <li><span>UI/UX</span><br>Web Design/User Interface</li>
             <li><span>Front End Developer</span><br>Junior Web Developer</li>
@@ -62,7 +62,7 @@
         <!-- Edit Konten Kemampuan Selesai -->
 
         <!-- Edit Konten Pengalaman Organisasi Mulai -->
-        <div class="tab-contents" id="pengalaman-organisasi">
+        <div class="tab-kontens" id="pengalaman-organisasi">
           <ul>
             <li><span>2023 - Sekarang</span><br>BEM - Staff BPSDM</li>
             <li><span>2022 - 2022</span><br>Zona Nalar - Anggota EO</li>
@@ -73,7 +73,7 @@
         <!-- Edit Konten Pengalaman Organisasi Selesai -->
 
         <!-- Edit Konten Pendidikan Mulai -->
-        <div class="tab-contents" id="pendidikan">
+        <div class="tab-kontens" id="pendidikan">
           <ul>
             <li><span>2022 - Sekarang</span><br>Universitas Logistik dan Bisnis Internasional - Manajemen Logistik</li>
             <li><span>2019 - 2022</span><br>SMA Negeri 2 Tambun Utara - IPA</li>
@@ -93,17 +93,17 @@
 <!-- Javascript -->
 <script>
   var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+var tabcontents = document.getElementsByClassName("tab-kontens");
 
 function opentab(tabname) {
   for (let tablink of tablinks) {
-    tablink.classList.remove("active-link");
+    tablink.classList.remove("link-aktif");
   }
   for (let tabcontent of tabcontents) {
-    tabcontent.classList.remove("active-tab");
+    tabcontent.classList.remove("tab-aktif");
   }
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
+  event.currentTarget.classList.add("link-aktif");
+  document.getElementById(tabname).classList.add("tab-aktif");
 }
 </script>
 <!-- JavaScript -->
