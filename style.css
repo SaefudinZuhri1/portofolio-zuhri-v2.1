@@ -370,6 +370,70 @@ form .btn2 {
 }
 /* Edit Footer Selesai */
 
+/* Edit Responsive Mulai */
+nav .fas {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .teks-header {
+    margin-top: 50%;
+    font-size: 16px;
+  }
+  .teks-header h1 {
+    font-size: 30px;
+  }
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 5;
+    transition: right 1.0s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-judul {
+    font-size: 40px;
+  }
+  .tentang-saya-col-1, .tentang-saya-col-2 {
+    flex-basis: 100%;
+  }
+  .tentang-saya-col-1 {
+    margin-bottom: 30px;
+  }
+  .tentang-saya-col-2 {
+    font-size: 14px;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  .kontak-kiri, .kontak-kanan {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 16px;
+  }
+}
+/* Edit Responsive Selesai */
+
+
 
 
 

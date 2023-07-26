@@ -13,13 +13,15 @@
 
   <!-- Edit Nav Mulai -->
   <nav>
-    <ul>
+    <ul id="menu-samping">
       <li><a href="#">Home</a></li>
       <li><a href="#">Tentang Saya</a></li>
       <li><a href="#">Pendidikan</a></li>
       <li><a href="#">Portofolio</a></li>
       <li><a href="#">Kontak Saya</a></li>
+      <i class="fas fa-items fa-xmark" onclick="tutup_menu()"></i>
     </ul>
+    <i class="fas fa-bars" onclick="buka_menu()"></i>
   </nav>
   <!-- Edit Nav Selesai -->
 
@@ -214,6 +216,17 @@ function opentab(tabname) {
   event.currentTarget.classList.add("link-aktif");
   document.getElementById(tabname).classList.add("tab-aktif");
 }
+</script>
+
+<script type="text/javascript">
+  var menu = document.getElementById("menu-samping");
+
+  function buka_menu() {
+    menu.style.right = "0";
+  }
+  function tutup_menu() {
+    menu.style.right = "-200px";
+  }
 </script>
 <!-- JavaScript -->
 </body>
