@@ -9,16 +9,17 @@
 </head>
 <body>
 <!-- Edit Header Mulai -->
+<div id="header">
 <div class="container">
 
   <!-- Edit Nav Mulai -->
   <nav>
     <ul id="menu-samping">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Tentang Saya</a></li>
-      <li><a href="#">Pendidikan</a></li>
-      <li><a href="#">Portofolio</a></li>
-      <li><a href="#">Kontak Saya</a></li>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#tentang-saya">Tentang Saya</a></li>
+      <li><a href="#layanan-saya">Layanan</a></li>
+      <li><a href="#portofolio">Portofolio</a></li>
+      <li><a href="#kontak_saya">Kontak Saya</a></li>
       <i class="fas fa-items fa-xmark" onclick="tutup_menu()"></i>
     </ul>
     <i class="fas fa-bars" onclick="buka_menu()"></i>
@@ -33,6 +34,7 @@
   </div>
   <!-- Edit Teks Header Selesai -->
 
+</div>
 </div>
 <!-- Edit Header Selesai -->
 
@@ -94,7 +96,7 @@
 <!-- Edit Tentang Saya Selesai -->
 
 <!-- Edit Layanan Mulai -->
-<div id="layanan">
+<div id="layanan-saya">
   <div class="container">
 
     <!-- Edit List Layanan Mulai -->
@@ -182,12 +184,13 @@
       </div>
       <div class="kontak-kanan">
         <form>
-          <input type="text" name="nama" placeholder="Nama Kamu" required>
-          <input type="email" name="email" placeholder="Email Kamu" required>
-          <input type="text" name="judul" placeholder="Judul" required>
-          <textarea name="pesan"rows="8" placeholder="Tuliskan Pesan Kamu"></textarea>
+          <input type="text" name="Nama" placeholder="Nama Kamu" required>
+          <input type="email" name="Email" placeholder="Email Kamu" required>
+          <input type="text" name="Judul" placeholder="Judul" required>
+          <textarea name="Pesan"rows="8" placeholder="Tuliskan Pesan Kamu"></textarea>
           <button type="submit" class="btn btn2">Kirim!</button>
         </form>
+          <span id="msg"></span>
       </div>
       <!-- Edit Detail Kontak Selesai -->
 
